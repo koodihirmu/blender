@@ -609,12 +609,12 @@
 #define _DNA_DEFAULT_SubsurfModifierData \
   { \
     .subdivType = 0, \
-    .levels = 1, \
-    .renderLevels = 2, \
-    .flags = eSubsurfModifierFlag_UseCrease | eSubsurfModifierFlag_ControlEdges, \
+    .levels = 2, \
+    .renderLevels = 3, \
+    .flags = eSubsurfModifierFlag_UseCrease | eSubsurfModifierFlag_ControlEdges | eSubsurfModifierFlag_UseRecursiveSubdivision , \
     .uv_smooth = SUBSURF_UV_SMOOTH_PRESERVE_BOUNDARIES, \
     .quality = 3, \
-    .boundary_smooth = SUBSURF_BOUNDARY_SMOOTH_ALL, \
+    .boundary_smooth = SUBSURF_BOUNDARY_SMOOTH_PRESERVE_CORNERS, \
     .emCache = NULL, \
     .mCache = NULL, \
   }

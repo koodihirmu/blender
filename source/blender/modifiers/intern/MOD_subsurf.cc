@@ -483,8 +483,7 @@ ModifierTypeInfo modifierType_Subsurf = {
     /*srna*/ &RNA_SubsurfModifier,
     /*type*/ ModifierTypeType::Constructive,
     /*flags*/ eModifierTypeFlag_AcceptsMesh | eModifierTypeFlag_SupportsMapping |
-        eModifierTypeFlag_SupportsEditmode | eModifierTypeFlag_EnableInEditmode |
-        eModifierTypeFlag_AcceptsCVs,
+        eModifierTypeFlag_SupportsEditmode | eModifierTypeFlag_AcceptsCVs,
     /*icon*/ ICON_MOD_SUBSURF,
 
     /*copy_data*/ copy_data,
